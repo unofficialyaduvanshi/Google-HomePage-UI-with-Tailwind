@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google UI Clone with Tailwind</title>
+    <!-- for Browser tab icon -->
+    <link rel="icon" type="image/x-icon" href="/1104702.ico" />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <!-- for use your custom font give class in body tag => class="font-myfont" -->
+    <header class="flex justify-between text-[10px] font-medium">
+      <div class="flex p-3 text-center justify-start">
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-700 hover:underline"> About </a>
+          <a href="#" class="text-gray-700 hover:underline"> Store </a>
+        </div>
+      </div>
+
+      <div class="flex p-3 text-center justify-start">
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-700 hover:underline"> Gmail </a>
+          <a href="#" class="text-gray-700 hover:underline"> Images </a>
+
+          <div class="flex space-x-4 cursor-pointer">
+            <svg
+              class="h-5 w-5 -translate-y-1"
+              fill="#5f6267"
+              focusable="false"
+              height="15px"
+              viewBox="0 -960 960 960"
+              width="60px"
+            >
+              <path
+                d="M209-120q-42 0-70.5-28.5T110-217q0-14 3-25.5t9-21.5l228-341q10-14 15-31t5-34v-110h-20q-13 0-21.5-8.5T320-810q0-13 8.5-21.5T350-840h260q13 0 21.5 8.5T640-810q0 13-8.5 21.5T610-780h-20v110q0 17 5 34t15 31l227 341q6 9 9.5 20.5T850-217q0 41-28 69t-69 28H209Zm221-660v110q0 26-7.5 50.5T401-573L276-385q-6 8-8.5 16t-2.5 16q0 23 17 39.5t42 16.5q28 0 56-12t80-47q69-45 103.5-62.5T633-443q4-1 5.5-4.5t-.5-7.5l-78-117q-15-21-22.5-46t-7.5-52v-110H430Z"
+              ></path>
+            </svg>
+
+            <svg
+              class="h-5 w-5 -translate-y-1"
+              fill="#5f6267"
+              focusable="false"
+              height="20px"
+              viewBox="0 0 24 24"
+              width="20px"
+            >
+              <path
+                d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+              ></path>
+            </svg>
+
+            <svg
+              class="-translate-y-1.5"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#5f6267"
+            >
+              <path
+                d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex flex-col items-center">
+      <img
+        class="h-16 mb-5 mt-20 cursor-pointer"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
+      />
+
+      <div class="w-full max-w-lg">
+        <div class="relative">
+          <input
+            type="text"
+            class="w-md ml-8 border border-gray-300 bg-white rounded-full px-4 py-1 pl-7 focus:outline-none hover:shadow-[0_0_10px_0_rgba(55,65,81,0.5)] focus:shadow-[0_0_10px_0_rgba(55,65,81,0.5)] transition-shadow duration-200"
+          />
+
+          <svg
+            class="absolute left-10 top-2.5 h-4 cursor-pointer"
+            fill="#959a9f"
+            focusable="false"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            ></path>
+          </svg>
+
+          <svg
+            class="absolute left-88 bottom-2 h-4 cursor-pointer"
+            fill="#1f1f1f"
+            aria-hidden="true"
+            focusable="false"
+            viewBox="0 -960 960 960"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="var(--bbQxAb)"
+              d="M480-400q-50 0-85-35t-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35Zm-40 280v-123q-104-14-172-93t-68-184h80q0 83 58.5 141.5T480-320q83 0 141.5-58.5T680-520h80q0 105-68 184t-172 93v123h-80Z"
+            ></path>
+          </svg>
+
+          <svg
+            class="absolute left-94 bottom-2 h-4 cursor-pointer"
+            fill="#1f1f1f"
+            aria-hidden="true"
+            focusable="false"
+            viewBox="0 -960 960 960"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="var(--bbQxAb)"
+              d="M480-320q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35Zm240 160q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160Zm-440 40q-66 0-113-47t-47-113v-80h80v80q0 33 23.5 56.5T280-200h200v80H280Zm480-320v-160q0-33-23.5-56.5T680-680H280q-33 0-56.5 23.5T200-600v120h-80v-120q0-66 47-113t113-47h80l40-80h160l40 80h80q66 0 113 47t47 113v160h-80Z"
+            ></path>
+          </svg>
+
+          <div class="absolute left-101 bottom-1">
+            <input
+              type="text"
+              class="bg-gray-100 w-17 rounded-full border border-gray-100 focus:outline-none py-1 text-xs"
+            />
+
+            <svg
+              class="absolute h-4 bottom-1"
+              fill="#1f1f1f"
+              focusable="false"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              enable-background="new 0 0 24 24"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <g><rect fill="none" height="24" width="24"></rect></g>
+              <g>
+                <g>
+                  <path
+                    d="M17.5 12c0-3.04 2.46-5.5 5.5-5.5-3.04 0-5.5-2.46-5.5-5.5 0 3.04-2.46 5.5-5.5 5.5 3.04 0 5.5 2.46 5.5 5.5z"
+                  ></path>
+                  <path
+                    d="M15.65 11.58c.18-.5.27-1.03.31-1.58h-2c-.1 1.03-.51 1.93-1.27 2.69-.88.87-1.94 1.31-3.19 1.31C7.03 14 5 12.07 5 9.5 5 7.03 6.93 5 9.5 5c.46 0 .89.08 1.3.2l1.56-1.56C11.5 3.22 10.55 3 9.5 3 5.85 3 3 5.85 3 9.5S5.85 16 9.5 16c.56 0 2.26-.06 3.8-1.3l6.3 6.3 1.4-1.4-6.3-6.3c.4-.5.72-1.08.95-1.72z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+
+            <p class="absolute text-xs scale-80 text-black bottom-1 left-5">
+              AI Mode
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex space-x-5 text-xs scale-90 text-gray-700 mt-5 justify-center"
+      >
+        <button
+          class="bg-gray-100 p-1 rounded-md px-3 py-0.5 cursor-pointer hover:border border border-transparent hover:border-gray-400 transition"
+        >
+          Google Search
+        </button>
+        <button
+          class="bg-gray-100 rounded-md px-3 py-0.5 cursor-pointer hover:border border border-transparent hover:border-gray-400 transition"
+        >
+          I'm Feeling Lucky
+        </button>
+      </div>
+
+      <div class="flex justify-between text-[10px] font-medium mt-5">
+        <div class="flex p-3 text-center justify-start">
+          <div class="flex space-x-1">
+            <span class="text-gray-500 scale-90">Google offered in:</span>
+            <a href="#" class="text-blue-700 hover:underline"> हिन्दी </a>
+            <a href="#" class="text-blue-700 hover:underline"> বাংলা </a>
+            <a href="#" class="text-blue-700 hover:underline"> తెలుగు </a>
+            <a href="#" class="text-blue-700 hover:underline"> मराठी </a>
+            <a href="#" class="text-blue-700 hover:underline"> தமிழ் </a>
+            <a href="#" class="text-blue-700 hover:underline"> ગુજરાતી </a>
+            <a href="#" class="text-blue-700 hover:underline"> ಕನ್ನಡ </a>
+            <a href="#" class="text-blue-700 hover:underline"> മലയാളം </a>
+            <a href="#" class="text-blue-700 hover:underline"> ਪੰਜਾਬੀ </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="bg-gray-100 absolute bottom-0 w-full text-gray-700 text-[10px] font-medium cursor-pointer"
+    >
+      <div>
+        <div class="py-2 border-b border-gray-300 pl-5">India</div>
+      </div>
+
+      <div class="py-2 pl-5 flex justify-between">
+        <ul class="flex space-x-5">
+          <a class="hover:underline" href="#"> Advertising </a>
+          <a class="hover:underline" href="#"> Business </a>
+          <a class="hover:underline" href="#"> How Search works </a>
+        </ul>
+
+        <ul class="flex space-x-5 pr-5">
+          <a class="hover:underline" href="#"> Privacy </a>
+          <a class="hover:underline" href="#"> Terms </a>
+          <a class="hover:underline" href="#"> Settings </a>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

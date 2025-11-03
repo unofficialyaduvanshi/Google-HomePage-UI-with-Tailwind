@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-myfont: "Momo Trust Display", sans-serif;
+}
